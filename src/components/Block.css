@@ -1,0 +1,7 @@
+.currency-list {
+    background-color: blueviolet;
+}
+.active {
+    background-color: green;
+    border: 2px solid black;
+}
