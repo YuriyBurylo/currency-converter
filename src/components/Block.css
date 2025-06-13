@@ -1,7 +1,32 @@
-.currency-list {
-    background-color: blueviolet;
+.block {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 8px darkgreen;
 }
+
+.currency-list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid green;
+}
+
+.currency-list li {
+    border: 1px solid green;
+}
+
 .active {
     background-color: green;
-    border: 2px solid black;
+    border: 1px solid green;
+    color: #fff;
+}
+
+.input {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1rem;
 }

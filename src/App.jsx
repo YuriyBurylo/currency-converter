@@ -60,12 +60,13 @@ function App() {
   }, [currency2]);
 
   return (
-    <>
+    <div className="App">
       <h1>Smart Currency Converter</h1>
-      <div></div>
-      <Block value={price1} currency={currency1} changeValue={onChangeValue1} changeCurrency={onChangeCurrency1}/>
-      <Block value={price2} currency={currency2} changeValue={onChangeValue2} changeCurrency={onChangeCurrency2}/>
-    </>
+        <div className="container">
+          <Block value={price1} currency={currency1} changeValue={onChangeValue1} changeCurrency={onChangeCurrency1}/>
+          <Block value={price2} currency={currency2} changeValue={onChangeValue2} changeCurrency={onChangeCurrency2}/>
+        </div>
+    </div>
   )
 }
 
